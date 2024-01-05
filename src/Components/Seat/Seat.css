@@ -1,0 +1,41 @@
+.bus-seat-booking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+   }
+   
+   .seat-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 15px;
+    margin-bottom: 20px;
+   }
+   
+   .seat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 30%;
+    cursor: pointer;
+   }
+   
+   .seat.selected {
+    background-color: #007bff;
+    color: white;
+   }
+   
+   .selected-seats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   
+   .selected-seats ul {
+    list-style-type: none;
+    padding: 0;
+   }
